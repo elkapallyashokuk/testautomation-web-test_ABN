@@ -1,0 +1,624 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;successful-login-with-valid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Successful Login with Valid Credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2501790500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 679535199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "The user enters a valid email \"test@gamil.com\" in the \"User\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118810900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "The user enters a valid password \"password123\" in the \"Password\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24354800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "The user clicks the \"LOGIN\" button",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 221378700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "The user should be redirected to the homepage",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 410200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 755900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTest",
+            "line": 1
+          },
+          {
+            "name": "@TC001_Login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;unsuccessful-login-with-invalid-email",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Unsuccessful Login with Invalid Email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2182976599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 554355800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "The user enters a valid email \"test@gmail.com\" in the \"User\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116607600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "The user enters a valid password \"password123\" in the \"Password\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31341499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "The user clicks the \"LOGIN\" button",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128117900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "The user should see an error message \"Invalid email address\"",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1793099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1621600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTest",
+            "line": 1
+          },
+          {
+            "name": "@TC002_InvalidEmail",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;unsuccessful-login-with-invalid-password",
+        "keyword": "Scenario Outline",
+        "line": 37,
+        "name": "Unsuccessful Login with Invalid Password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2290422599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1021351800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "The user enters a valid email \"test@gmail.com\" in the \"User\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155113499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "The user enters a valid password \"Incorrect\" in the \"Password\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106214100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "The user clicks the \"LOGIN\" button",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182494600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "The user should see an error message \"Incorrect password\"",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1339799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1215000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTest",
+            "line": 1
+          },
+          {
+            "name": "@TC003_InvalidPassword",
+            "line": 27
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;unsuccessful-login-with-empty-email",
+        "keyword": "Scenario Outline",
+        "line": 48,
+        "name": "Unsuccessful Login with Empty Email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3134208000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 40,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 538897700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "The user enters a valid email \"\" in the \"User\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117820999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "The user enters a valid password \"password123\" in the \"Password\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50155899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "The user clicks the \"LOGIN\" button",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138535700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "The user should see an error message \"Email is required\"",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 815999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 281899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTest",
+            "line": 1
+          },
+          {
+            "name": "@TC004_EmptyEmail",
+            "line": 38
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;unsuccessful-login-with-empty-password",
+        "keyword": "Scenario Outline",
+        "line": 59,
+        "name": "Unsuccessful Login with Empty Password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3061060900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 51,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 401035900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "The user enters a valid email \"test@gmail.com\" in the \"User\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128642399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "The user enters a valid password \"\" in the \"Password\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40922699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "The user clicks the \"LOGIN\" button",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168719599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 55,
+            "name": "The user should see an error message \"Password is required\"",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 434300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 139900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTest",
+            "line": 1
+          },
+          {
+            "name": "@TC005_EmptyPassword",
+            "line": 49
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;unsuccessful-login-with-both-fields-empty",
+        "keyword": "Scenario Outline",
+        "line": 71,
+        "name": "Unsuccessful Login with Both Fields Empty",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2601721900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 63,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 491137800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 64,
+            "name": "The user enters a valid email \"\" in the \"User\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95679500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "The user enters a valid password \"\" in the \"Password\" field",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34314699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "The user clicks the \"LOGIN\" button",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102728600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 67,
+            "name": "The user should see an error message \"Email and Password are required\"",
+            "match": {
+              "location": "tests\\steps\\loginStep.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1461999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 168900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTest",
+            "line": 1
+          },
+          {
+            "name": "@TC006_EmptyEmailPassword",
+            "line": 61
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [
+      {
+        "name": "@allTest",
+        "line": 1
+      }
+    ],
+    "uri": "features\\login.feature"
+  }
+]
